@@ -9,7 +9,12 @@ function JumboTron() {
         <p className="lead">A directory for employers to view all their employees and info!</p>
       </div>
     </div>
-    
+    <div className="input-group mb-3" style={{width:"20rem"}}>
+  <input type="text" className="form-control" placeholder="Search for an employe name" aria-label="Employee Search" aria-describedby="basic-addon2"/>
+  <div className="input-group-append">
+    <span className="input-group-text" id="basic-addon2">Search</span>
+  </div>
+</div>
   </>
 }
 
