@@ -9,6 +9,7 @@ function JumboTron() {
         <p className="lead">A directory for employers to view all their employees and info!</p>
       </div>
     </div>
+    
   </>
 }
 

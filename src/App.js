@@ -3,7 +3,7 @@ import JumboTron from './components/JumboTron';
 import Cards from './components/Cards';
 
 function App() {
-  return <JumboTron />;
+  return [<JumboTron />, <Cards />];
 }
 
 export default App;
