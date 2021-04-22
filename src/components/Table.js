@@ -2,13 +2,12 @@
 import React from 'react';
 
 const styles = {
-    width:"19rem",
-    display: "inline-flex",
-    background:"lightblue"
+    background:"lightblue",
+    border: "1px solid black"
 }
 function Table(props) {
         return (
-          <table class="table">
+          <table class="table"style={styles}>
             <thead>
               <tr>
                 <th scope="col">Image</th>

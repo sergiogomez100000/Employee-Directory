@@ -13,16 +13,16 @@ const styles = {
 // //console.log(this.state)
 // }
 
-handleSearch = e => {
-  const search = e.target.value.toLowerCase();
-  const { everyone } = this.state;
-  const newArr = everyone.filter(
-    ({ name }) =>
-      name.last.toLowerCase().startsWith(search) ||
-      name.first.toLowerCase().startsWith(search)
-  );
-  this.setState({ employees: newArr });
-};
+// handleSearch = e => {
+//   const search = e.target.value.toLowerCase();
+//   const { everyone } = this.state;
+//   const newArr = everyone.filter(
+//     ({ name }) =>
+//       name.last.toLowerCase().startsWith(search) ||
+//       name.first.toLowerCase().startsWith(search)
+//   );
+//   this.setState({ employees: newArr });
+// };
 
 // handleSearch = () => {
 //   const { employees, sorted } = this.state;
@@ -33,13 +33,13 @@ handleSearch = e => {
 //   this.setState({ employees: newArr, sorted: !sorted });
 // };
 
-InputChange = event => {
-  const name = event.target.name;
-  const value = event.target.value;
-  this.setState({
-    [name]:value
-  });
-};
+// InputChange = event => {
+//   const name = event.target.name;
+//   const value = event.target.value;
+//   this.setState({
+//     [name]:value
+//   });
+// };
 
 function JumboTron() {
 
@@ -67,12 +67,13 @@ function JumboTron() {
       </div>
     </div>
     <div className="input-group mb-3 container" style={{width:"22rem"}}>
-  <input type="text" className="form-control" placeholder="Search for an employee name" aria-label="Employee Search" aria-describedby="basic-addon2"onChange={this.InputChange}/>
+  <input type="text" className="form-control" placeholder="Search for an employee name" aria-label="Employee Search" aria-describedby="basic-addon2"/>
   <div className="input-group-append">
-    <button className="input-group-text" style={{background:"lightblue"}} id="basic-addon2"onClick={this.HandleSearch}>Search</button>
+    <button className="input-group-text" style={{background:"lightblue"}} id="basic-addon2">Search</button>
   </div>
 </div>
   </>
 }
-
+// onClick={this.HandleSearch}
+// onChange={this.InputChange}
 export default JumboTron;
