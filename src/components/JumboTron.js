@@ -10,9 +10,9 @@ function JumboTron() {
       </div>
     </div>
     <div className="input-group mb-3" style={{width:"20rem"}}>
-  <input type="text" className="form-control" placeholder="Search for an employe name" aria-label="Employee Search" aria-describedby="basic-addon2"/>
+  <input type="text" className="form-control" placeholder="Search for an employee name" aria-label="Employee Search" aria-describedby="basic-addon2"/>
   <div className="input-group-append">
-    <span className="input-group-text" id="basic-addon2">Search</span>
+    <button className="input-group-text" id="basic-addon2">Search</button>
   </div>
 </div>
   </>
