@@ -29,7 +29,8 @@ class App extends React.Component {
   render() {
     console.log(this.state);
     return (<> <JumboTron />
-      {employees.map((employees) => (<Cards image={employees.image} name={employees.name} phone={employees.phone} email={employees.email} />))};
+      {this.state.employees.length > 0 && 
+      this.state.employees.map((employees) => (<Cards image={employees.picture.thumbnail} name={employees.name} phone={employees.cell} email={employees.email} dob={employees.dob.date.slice(0,10)}/>))};
 
     </>
     )
