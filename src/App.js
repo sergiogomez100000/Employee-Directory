@@ -1,16 +1,8 @@
 import React from 'react';
 import JumboTron from './components/JumboTron';
-import Cards from './components/Cards';
+import Table from './components/Table';
 import API from "./utils/API"
 
-// function App() {
-//   return [<JumboTron />, <Cards />];
-// }
-
-// export default App;
-
-// import React from "react";
-// import API from "./utils/API";
 
 class App extends React.Component {
   state = {
@@ -30,7 +22,7 @@ class App extends React.Component {
     console.log(this.state);
     return (<> <JumboTron />
       {this.state.employees.length > 0 && 
-      this.state.employees.map((employees) => (<Cards image={employees.picture.thumbnail} name={employees.name} phone={employees.cell} email={employees.email} dob={employees.dob.date.slice(0,10)}/>))};
+      this.state.employees.map((employees) => (<Table image={employees.picture.thumbnail} name={employees.name} phone={employees.cell} email={employees.email} dob={employees.dob.date.slice(0,10)}/>))};
 
     </>
     )
