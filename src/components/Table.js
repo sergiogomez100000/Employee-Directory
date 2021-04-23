@@ -18,7 +18,7 @@ function Table(props) {
       </thead>
       <tbody>
         <tr>
-          <td><img src={props.image}/></td>
+          <td><img src={props.image} alt=""/></td>
           <td>{props.name.first} {props.name.last}</td>
           <td>{props.phone}</td>
           <td>{props.email}</td>
