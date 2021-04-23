@@ -17,13 +17,15 @@ function Table(props) {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><img src={props.image} alt=""/></td>
-          <td>{props.name.first} {props.name.last}</td>
-          <td>{props.phone}</td>
-          <td>{props.email}</td>
-          <td>{props.dob}</td>
-        </tr>
+        {props.users.map((data)=>{
+          return(
+        <tr key={data.id.value}>
+          <td><img src={data.image} alt=""/></td>
+          <td>{data.name.first} {data.name.last}</td>
+          <td>{data.phone}</td>
+          <td>{data.email}</td>
+          <td>{data.dob.date.slice(0,10)}</td>
+        </tr>)})}
       </tbody>
     </table>
   );

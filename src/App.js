@@ -40,7 +40,7 @@ class App extends React.Component {
           onChange={this.InputChange}
         />
         <button onClick={this.handleSort}>Sort A-Z!!! </button>
-        {this.state.searched.length > 0 &&
+        {/* {this.state.searched.length > 0 &&
           this.state.searched.map((employees) => (
             <Table
             key = {employees.id.value}
@@ -50,7 +50,8 @@ class App extends React.Component {
               email={employees.email}
               dob={employees.dob.date.slice(0, 10)}
             />
-          ))}
+          ))} */}
+          <Table users = {this.state.searched} />
       </>
     );
   }
