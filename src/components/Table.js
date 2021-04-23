@@ -20,7 +20,7 @@ function Table(props) {
         {props.users.map((data)=>{
           return(
         <tr key={data.id.value}>
-          <td><img src={data.image} alt=""/></td>
+          <td><img src={data.picture.thumbnail} alt=""/></td>
           <td>{data.name.first} {data.name.last}</td>
           <td>{data.phone}</td>
           <td>{data.email}</td>
