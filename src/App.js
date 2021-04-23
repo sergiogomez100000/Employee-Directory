@@ -43,6 +43,7 @@ class App extends React.Component {
         {this.state.searched.length > 0 &&
           this.state.searched.map((employees) => (
             <Table
+            key = {employees.id.value}
               image={employees.picture.thumbnail}
               name={employees.name}
               phone={employees.cell}

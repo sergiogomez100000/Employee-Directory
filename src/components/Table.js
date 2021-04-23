@@ -6,7 +6,7 @@ const styles = {
 };
 function Table(props) {
   return (
-    <table class="table" style={styles}>
+    <table className="table" style={styles}>
       <thead>
         <tr>
           <th scope="col">Image</th>
